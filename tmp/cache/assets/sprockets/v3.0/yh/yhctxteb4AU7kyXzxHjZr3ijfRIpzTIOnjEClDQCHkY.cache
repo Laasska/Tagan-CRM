@@ -1,0 +1,19 @@
+{:uriI"”file://app/assets/javascripts/app/templates/logout/logout.html?type=text/ng-html&id=cd7ef0932afa0bac27e044c4df2f5f9773f05fa614e12d88d5ab01e6c7e2c1b3:ET:load_pathI"app/assets/javascripts;T:filenameI"<app/assets/javascripts/app/templates/logout/logout.html;T:	nameI" app/templates/logout/logout;T:logical_pathI"%app/templates/logout/logout.html;T:content_typeI"text/ng-html;T:sourceI"2<div id="pop-up-dialog-bg" ng-show="log.showPopUpDialog">
+    <div id="pop-up-dialog">
+        <div class="content">{{log.content}}</div>
+        <div class="clearfix buttons-container">
+            <div class="pull-left">
+                <a class="btn btn-primary" data-method="delete" ng-href="/access/logout" ng-click="log.close()">
+                    Yes
+                </a>
+            </div>
+            <div class="pull-right">
+                <a class="btn btn-warning" ng-click="log.cancel()">No</a>
+            </div>
+        </div>
+    </div>
+</div>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Jfile-digest://app/assets/javascripts/app/templates/logout/logout.html;TTF:charsetI"
+utf-8;F:digest"%ƒ-À”Å¤Í$÷ĞÂÅÆ©âö\í€òqÿ;'œq—(:lengthi2:dependencies_digest"%îıÒƒ3#œÛº¿æéÄ9÷õËû}Í}‘Æ[:idI"Ecd7ef0932afa0bac27e044c4df2f5f9773f05fa614e12d88d5ab01e6c7e2c1b3;F:
+mtimel+]ªˆ]

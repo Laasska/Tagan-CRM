@@ -1,0 +1,13 @@
+{:uriI"žfile://app/assets/javascripts/app/templates/worldtime/worldtime.tpl.html?type=text/ng-html&id=8606861c1d53cccf93ba7c15712029e2a493015854a840c842319e54290e572a:ET:load_pathI"app/assets/javascripts;T:filenameI"Fapp/assets/javascripts/app/templates/worldtime/worldtime.tpl.html;T:	nameI"*app/templates/worldtime/worldtime.tpl;T:logical_pathI"/app/templates/worldtime/worldtime.tpl.html;T:content_typeI"text/ng-html;T:sourceI"<div class="world-time">
+    <div id="map">
+    </div>
+    <div sticky class="time-container">
+        <h4 class="selected-time btn-primary">{{wtCtrl.selectedTime}}</h4>
+        <h4 class="local-time btn-success">{{wtCtrl.localTime}}</h4>
+    </div>
+
+</div>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Tfile-digest://app/assets/javascripts/app/templates/worldtime/worldtime.tpl.html;TTF:charsetI"
+utf-8;F:digest"%_œ^ÑÉ|Xº=”>1½Ï­åÙÕCP”u50”¬Ó:lengthi:dependencies_digest"%šÐ4*§G3p—õ@¡˜Í¦Ó>·BË³rÉ¥&4:idI"E8606861c1d53cccf93ba7c15712029e2a493015854a840c842319e54290e572a;F:
+mtimel+]ªˆ]

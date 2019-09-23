@@ -1,0 +1,21 @@
+{:uriI"¢file://vendor/assets/components/modernizr/test/caniuse_files/hashchange.html?type=text/ng-html&id=770030a1813ed1f233fb2f051cba307ef551ed2fd44a57e9d646e3efe9a492c5:ET:load_pathI"vendor/assets/components;T:filenameI"Jvendor/assets/components/modernizr/test/caniuse_files/hashchange.html;T:	nameI",modernizr/test/caniuse_files/hashchange;T:logical_pathI"1modernizr/test/caniuse_files/hashchange.html;T:content_typeI"text/ng-html;T:sourceI"3<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>hashchange test</title>
+</head>
+<body style="background:red;overflow:hidden;">
+<script>
+addEventListener('hashchange', function() {
+	document.body.style.background = 'lime';
+}, false);
+
+location.hash = Math.random();
+</script>
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Xfile-digest://vendor/assets/components/modernizr/test/caniuse_files/hashchange.html;TTF:charsetI"
+utf-8;F:digest"%CmÒ§,ŒÍÍ¹5íE°TP;3Dğ°Jª~Şóé,ñÀq:lengthi3:dependencies_digest"%G6%Æo_ø6Zˆó^'*V¶j¡K{+»³Œı,^¶:idI"E770030a1813ed1f233fb2f051cba307ef551ed2fd44a57e9d646e3efe9a492c5;F:
+mtimel+×…µS

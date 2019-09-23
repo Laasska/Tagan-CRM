@@ -66,7 +66,7 @@ gem 'acts_as_api', '~> 0.4.2'
 
 gem "browserify-rails"
 
-gem 'activeadmin', github: 'activeadmin'
+gem 'activeadmin'
 
 gem 'angular-rails-templates'
 
@@ -100,3 +100,20 @@ gem 'slack-notifier'
 gem 'net-ssh', '~> 4.2'
 gem 'carrierwave'
 gem 'fog', '~> 1.38'
+
+gem 'figaro'
+gem 'puma' #Should already be in your Gemfile
+
+group :development do
+
+  gem 'capistrano'
+
+  gem 'capistrano3-puma'
+
+  gem 'capistrano-rails' #Should already be in your Gemfile
+
+  gem 'capistrano-bundler'
+
+  gem 'capistrano-rvm'
+
+end

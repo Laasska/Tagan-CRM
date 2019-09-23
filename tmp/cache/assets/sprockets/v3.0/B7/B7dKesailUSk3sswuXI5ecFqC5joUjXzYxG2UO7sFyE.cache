@@ -1,0 +1,19 @@
+{:uriI"§file://vendor/assets/components/modernizr/test/caniuse_files/form_validation.html?type=text/ng-html&id=cb205cf5008445e08f7402e5c055759e5260555003165f6965e49477d88c5c07:ET:load_pathI"vendor/assets/components;T:filenameI"Ovendor/assets/components/modernizr/test/caniuse_files/form_validation.html;T:	nameI"1modernizr/test/caniuse_files/form_validation;T:logical_pathI"6modernizr/test/caniuse_files/form_validation.html;T:content_typeI"text/ng-html;T:sourceI"Å<!DOCTYPE html>
+<!-- saved from url=(0045)http://tests.caniuse.com/form_validation.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>
+if(location.href.indexOf('?') >= 0) {
+	document.write('FAIL');
+}
+</script>
+
+</head><body><form action="http://tests.caniuse.com/form_validation.html?" method="post">
+
+<input type="url" name="foo" required="">
+<input type="submit" value="submit me!">
+
+</form>
+</body></html>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"]file-digest://vendor/assets/components/modernizr/test/caniuse_files/form_validation.html;TTF:charsetI"
+utf-8;F:digest"%™‡§wieÇX³õ[4¨>¾rŒª"E©—Û²€Y#:lengthiÅ:dependencies_digest"%Â³õæÃhk­ÏQE÷>’U`ÕŸ˜Oõìrpì*:idI"Ecb205cf5008445e08f7402e5c055759e5260555003165f6965e49477d88c5c07;F:
+mtimel+×…µS

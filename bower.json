@@ -32,7 +32,8 @@
     "moment-timezone": "0.5.4",
     "ngSticky": "1.8.10",
     "angular-scroll-glue": "2.0.7",
-    "angular-notification": "1.1.1"
+    "angular-notification": "1.1.1",
+    "bootstrap-sass": "bootstrap-sass-official#^3.4.1"
   },
   "resolutions": {
     "angular": "1.5.5"

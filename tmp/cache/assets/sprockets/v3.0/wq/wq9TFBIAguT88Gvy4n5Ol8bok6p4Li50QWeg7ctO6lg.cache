@@ -1,0 +1,66 @@
+I"�(function() {
+  var setTime;
+
+  $(document).ready(function() {
+    var addAndRemoveHeader, default_options, default_options_user_calendar;
+    default_options = {
+      lang: 'ru',
+      header: {
+        center: "title",
+        right: "prev today next",
+        left: "listWeek, agendaWeek, month",
+        defaultView: "month"
+      },
+      events: 'calendars.json'
+    };
+    default_options_user_calendar = {
+      lang: 'ru',
+      header: {
+        center: "title",
+        right: "prev today next",
+        left: "agendaWeek, month, listYear, addEvent"
+      },
+      defaultView: "listYear",
+      views: {
+        listYear: {
+          buttonText: 'Год'
+        }
+      },
+      customButtons: {
+        addEvent: {
+          text: 'Добавить событие',
+          click: function() {
+            var url, userId;
+            url = document.URL;
+            userId = url.match(/\/admin\/users\/(\d*)/);
+            return window.location.href = '/admin/user_events/new?user_id=' + userId[1];
+          }
+        }
+      },
+      eventAfterAllRender: function() {
+        return addAndRemoveHeader();
+      },
+      events: 'calendars.json'
+    };
+    if ($('.full-calendar').length > 0) {
+      $("#fullCalendar").fullCalendar(default_options);
+    } else if ($('.user-calendar').length > 0) {
+      $("#fullCalendar").fullCalendar(default_options_user_calendar);
+    }
+    addAndRemoveHeader = function() {
+      $('.fc-right').find('.m-t-none').remove();
+      $('.fc-right').find('.line').remove();
+      return $('.fc-prev-button').before('<h3 class="m-t-none">отпуск</h3><span class="line line-red"></span>' + '<h3 class="m-t-none">отгул</h3><span class="line line-blue"></span>' + '<h3 class="m-t-none">прогул</h3><span class="line line-green"></span>');
+    };
+    return setTime();
+  });
+
+  setTime = function() {
+    var startHour;
+    startHour = $("#user_event_start_input #user_event_start_4i").find("option[selected='selected']").val();
+    $("#user_event_end_input #user_event_end_4i").find("option[selected='selected']").removeAttr('selected');
+    return $("#user_event_end_input #user_event_end_4i").find("option[value=" + (parseInt(startHour) + 1) + "]").attr('selected', 'selected');
+  };
+
+}).call(this);
+:ET

@@ -1,0 +1,27 @@
+I"ä(function() {
+  $(function() {
+    return $('.jsoneditor-target').each(function() {
+      var container, editor, target;
+      target = $(this);
+      container = $('<div class="jsoneditor-container">').insertAfter(target);
+      editor = new JSONEditor(container[0], {
+        modes: ['code', 'form', 'text', 'tree', 'view'],
+        change: function() {
+          return target.val(editor.get());
+        }
+      });
+      editor.set((function() {
+        try {
+          if ($('.jsoneditor-target').val() === '') {
+            return '{\"key\"=>\"value\"}';
+          } else {
+            return $('.jsoneditor-target').val();
+          }
+        } catch (error) {}
+      })());
+      return target.hide();
+    });
+  });
+
+}).call(this);
+:ET

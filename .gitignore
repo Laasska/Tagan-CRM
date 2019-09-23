@@ -10,10 +10,11 @@
 # Ignore all logfiles and tempfiles.
 /log/
 !/log/.keep
-/tmp
-/config/database.yml
+/tmpssh
 .idea/*
 /vendor/assets/components/
 node_modules/
 /.vscode/
 .env
+/config/database.yml
+/config/secrets.yml

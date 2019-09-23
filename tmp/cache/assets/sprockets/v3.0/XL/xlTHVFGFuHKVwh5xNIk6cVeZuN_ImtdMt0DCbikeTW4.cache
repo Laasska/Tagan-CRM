@@ -1,0 +1,100 @@
+{:uriI"Æfile://vendor/assets/components/ngSticky/examples/dynamic-sticky-content/views/home.html?type=text/ng-html&id=1e8b295e6459589eeeba2647b2b8c7cc9d764e62853e7d4613f36200932f13c2:ET:load_pathI"vendor/assets/components;T:filenameI"Vvendor/assets/components/ngSticky/examples/dynamic-sticky-content/views/home.html;T:	nameI"8ngSticky/examples/dynamic-sticky-content/views/home;T:logical_pathI"=ngSticky/examples/dynamic-sticky-content/views/home.html;T:content_typeI"text/ng-html;T:sourceI"1
+<!-- user actions on this controller -->
+<div class="actionsToolbar">
+    <a ng-click="home.onChangeCity()">Change city</a>
+</div>
+
+
+<div class="applicationContainer">
+
+    <div class="container"
+
+         style=" background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(200,200,255,.7) 80% ), url({{home.city.data.image.source}})"
+
+    >
+        <div class="cityName">{{home.city.name}}</div>
+
+
+    </div>
+
+
+    <div class="playground">
+
+        <sticky-scroll class="scrolling-container">
+
+            <div class="content-container">
+
+                <div>
+                    <div class="introduction">
+                        <div class="introductionLabel">
+                            City Information
+                        </div>
+
+                        <div>
+                            <img ng-src="{{home.getWeatherImageSrc()}}"/>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div sticky class="sticky-box city-box"
+                     sticky-class="sticky-box-pinned"
+                     unsticky-class="sticky-box-unpinned"
+                     xoffset="25"
+                     confine="false"
+                     xmedia-query="min-width: 768px"
+                >
+
+                    <div class="cityNameContainer">
+                        <div class="cityName">
+                            <a ng-href="{{home.city.links.wikipedia}}" target="blank">
+                                {{home.city.name}}
+                            </a>
+                        </div>
+                        <div><img class="weatherIcon" ng-src="{{home.getWeatherImageSrc()}}"/></div>
+                    </div>
+
+
+                    <!-- dynamically injected -->
+                    <div class="contentAfterChangeCity" ng-show="home.changeCityCount > 0">{{home.changeCityCount}}. {{home.contentAfterChangeCity}}</div>
+
+
+                    <div class="localCityTime">
+                        Time: {{home.city.data.weather.date}}
+                    </div>
+                </div>
+
+                <div class="supplementary">
+                    <h3>weather</h3>
+
+
+                    <div>
+                        Temperature: {{home.getWeatherTemperatureCelsius()}} &deg;C
+                    </div>
+
+
+                    <div>
+                        {{home.city.data.weather.text}}
+                    </div>
+
+                    <img ng-src="{{home.city.data.image.source}}"/>
+
+                    <br><i>more {{home.city.name}} content...</i>
+
+                </div>
+
+
+            </div>
+
+
+        </sticky-scroll>
+
+    </div>
+
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"dfile-digest://vendor/assets/components/ngSticky/examples/dynamic-sticky-content/views/home.html;TTF:charsetI"
+utf-8;F:digest"%å≈>ˆgr'm-¥„âÛ3WhòíÕT∆Ú‹±öÚ-Åa$:lengthi1
+:dependencies_digest"%¸Ê’á»›6ÇfäßX“mÌÜ¶»%K˛ˇ#å˛€X:idI"E1e8b295e6459589eeeba2647b2b8c7cc9d764e62853e7d4613f36200932f13c2;F:
+mtimel+€!W

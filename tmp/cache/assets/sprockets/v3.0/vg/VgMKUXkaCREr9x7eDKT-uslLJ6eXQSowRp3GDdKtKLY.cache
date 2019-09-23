@@ -1,0 +1,45 @@
+{:uriI"°file://vendor/assets/components/modernizr/test/caniuse_files/pushstate.html?type=text/ng-html&id=d7ab5ad3c1a25c6e5c3b20f8ea9dbc74862ad9898df8788d8bd8a42f938fefed:ET:load_pathI"vendor/assets/components;T:filenameI"Ivendor/assets/components/modernizr/test/caniuse_files/pushstate.html;T:	nameI"+modernizr/test/caniuse_files/pushstate;T:logical_pathI"0modernizr/test/caniuse_files/pushstate.html;T:content_typeI"text/ng-html;T:sourceI"h<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>popstate event test</title>
+</head>
+<body>
+
+<script>
+
+(function() {
+	var test_id;
+	
+	function showResult(r) {
+		if(test_id && window.parent.setResult) {
+			parent.setResult(test_id, r);
+		} else {
+			alert(r);
+		}
+	}
+	
+	if(location.hash.length) {
+		test_id = location.hash.substr(1);
+	}
+	
+	if(history.pushState) {
+		var rand = Math.random();
+		setTimeout(function() {
+			history.pushState({foo: 'bar'}, "title", './' + rand);
+			var result = (location.href.indexOf(rand) > -1);
+			showResult(result);
+		}, 100);
+	} 
+	
+})();
+
+</script>
+
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Wfile-digest://vendor/assets/components/modernizr/test/caniuse_files/pushstate.html;TTF:charsetI"
+utf-8;F:digest"%í ?$KÜìÒ¡hHùZ„UÑ∆.∞R?S<"|=:lengthih:dependencies_digest"%ÚŒIÜw1mi∂ù—≤f¸ëÃñì∫àwYí’:€/Üß:idI"Ed7ab5ad3c1a25c6e5c3b20f8ea9dbc74862ad9898df8788d8bd8a42f938fefed;F:
+mtimel+◊ÖµS

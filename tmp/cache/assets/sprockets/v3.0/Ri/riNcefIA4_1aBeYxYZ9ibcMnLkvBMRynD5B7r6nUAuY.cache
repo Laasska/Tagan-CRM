@@ -1,0 +1,79 @@
+{:uriI"èfile://vendor/assets/components/matchmedia/test/head.html?type=text/ng-html&id=8c186da2f0bf6cb4ff062678c9928955f7484280915a7fb5e70a98a48cd6102a:ET:load_pathI"vendor/assets/components;T:filenameI"7vendor/assets/components/matchmedia/test/head.html;T:	nameI"matchmedia/test/head;T:logical_pathI"matchmedia/test/head.html;T:content_typeI"text/ng-html;T:sourceI"o<!DOCTYPE html>
+<html>
+    <head>
+        <title>matchMedia polyfill test page</title>
+        <script type="text/javascript" src="lib/JSLitmus.js"></script>
+        <script type="text/javascript" src="../matchMedia.js"></script>
+        <script type="text/javascript" src="../matchMedia.addListener.js"></script>
+        <script type="text/javascript">
+            var typeScreen  = window.matchMedia('screen'),
+                typePrint   = window.matchMedia('print'),
+                onlyAll     = window.matchMedia('only all'),
+                minWidth    = window.matchMedia('(min-width: 0px)'),
+                minWidth768 = window.matchMedia('(min-width: 768px)'),
+                handleMinWidth768 = function(mql) {
+                    alert('Browsers that support CSS3 media queries: "(min-width: 768px)" = ' + mql.matches);
+                };
+
+            // This group should be supported by everything
+            alert('All browsers: "screen" = ' + typeScreen.matches);
+            alert('All browsers: "print" = ' + typePrint.matches);
+
+            // Supports CSS3 media queries such as width/height, device-width/height, orientation but not matchMedia api
+            // See http://caniuse.com/#search=media%20queries and http://caniuse.com/#search=matchMedia
+            // The following browsers should return true to 'onlyAll.matches' and 'minWidth.matches'
+            // IE 9, 
+            // Firefox 3.5 - 5.0, 
+            // Chrome 4.0 - 8.0, 
+            // Safari 4 - 5.0, 
+            // Opera 9.5 - 12.0, 
+            // iOS 3.2 - 4.3, 
+            // Android 2.1 - 2.3
+            // Opera mini 10.0 - 12.0
+            // Blackberry 7.0
+            alert('Browsers that support CSS3 media queries: "only all" = ' + onlyAll.matches);
+            alert('Browsers that support CSS3 media queries: "(min-width: 0px)" = ' + minWidth.matches);
+
+            // Testing addListener support
+            minWidth768.addListener(handleMinWidth768);
+        </script>
+        <script type="text/javascript">
+            // Performance test
+            JSLitmus.test('matchMedia.js', function() {
+                window.matchMedia('screen and (min-width: 600px) and (min-height: 400px), screen and (min-height: 400px)');
+            });
+        </script>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>
+                    Test case for IE auto closing select elements
+                </legend>
+
+                <select name="demoSelect" id="demoSelect">
+                  <option value="value1" selected>Value 1</option>
+                  <option value="value2">Value 2</option>
+                  <option value="value3">Value 3</option>
+                </select>
+
+                <p>
+                    Click on the select. If it auto closes in 500 milliseconds then we've failed.
+                </p>
+            </fieldset>
+        </form>
+
+        <script type="text/javascript">
+            document.getElementById('demoSelect').onmousedown = function() {
+                setTimeout(function() {
+                    window.matchMedia('screen');
+                }, 500);
+            };
+        </script>
+    </body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Efile-digest://vendor/assets/components/matchmedia/test/head.html;TTF:charsetI"
+utf-8;F:digest"%+Ÿ—<&ì',ëq„ŸßÙ”p¢&0\™`«ÿj©îÊß+†:lengthio:dependencies_digest"%NA˙ì?_J}À˛ŸïB,’Ëé"œÕ≥Ü%÷vrñö:idI"E8c186da2f0bf6cb4ff062678c9928955f7484280915a7fb5e70a98a48cd6102a;F:
+mtimel+i¯NR

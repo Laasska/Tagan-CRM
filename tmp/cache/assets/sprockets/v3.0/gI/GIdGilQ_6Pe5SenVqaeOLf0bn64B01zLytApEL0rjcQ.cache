@@ -1,0 +1,11 @@
+I"(function() {
+  $(function() {
+    return $('.clear_filters_btn').click(function() {
+      return location.search = location.search.split('&').filter(function(s) {
+        !s.match(/^(q\[|page|commit|order)/);
+      }).join('&');
+    });
+  });
+
+}).call(this);
+:ET

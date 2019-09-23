@@ -1,0 +1,7 @@
+I"‡(function() {
+  $(document).ready(function() {
+    return $('#search-status-_sidebar_section').addClass('hide');
+  });
+
+}).call(this);
+:ET
